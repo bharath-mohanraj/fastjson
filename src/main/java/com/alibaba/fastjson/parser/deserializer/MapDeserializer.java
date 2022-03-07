@@ -14,10 +14,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 import com.alibaba.fastjson.JSONException;
-import com.alibaba.fastjson.parser.DefaultJSONParser;
-import com.alibaba.fastjson.parser.JSONLexer;
-import com.alibaba.fastjson.parser.JSONToken;
-import com.alibaba.fastjson.parser.ParseContext;
+import com.alibaba.fastjson.parser.*;
 import com.alibaba.fastjson.util.AntiCollisionHashMap;
 
 public class MapDeserializer implements ObjectDeserializer {

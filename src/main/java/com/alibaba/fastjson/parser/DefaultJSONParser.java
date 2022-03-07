@@ -261,7 +261,7 @@ public class DefaultJSONParser extends AbstractJSONParser {
 
                 if (key == "@type") {
                     String typeName = lexer.scanSymbol(symbolTable, '"');
-                    Class<?> clazz = TypeUtils.loadClass(typeName);
+                    Class<?> clazz = config.checkAutoType(typeName);
 
                     if (clazz == null) {
                         object.put("@type", typeName);
